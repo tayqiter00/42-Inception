@@ -12,7 +12,7 @@ services:
         ports:
             - 443:443
         networks:
-            inception
+            - inception
         restart:
             always
 
@@ -22,7 +22,7 @@ services:
         volumes:
             - /home/qtay/data:/var/lib/mysql
         networks:
-            inception
+            - inception
         env_file:
             - .env
         restart:
@@ -34,7 +34,7 @@ services:
         volumes:
             - /home/qtay/data:/var/www/html
         networks:
-            inception
+            - inception
         env_file:
             - .env
         restart:
