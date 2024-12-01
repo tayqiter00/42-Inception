@@ -1,7 +1,7 @@
 all : up
 
 up : 
-	@docker compose -f ./srcs/compose.yaml -d up
+	@docker compose -f ./srcs/compose.yaml up -d
 
 down : 
 	@docker compose -f ./srcs/compose.yaml down
